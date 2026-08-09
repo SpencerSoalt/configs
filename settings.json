@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash",
+      "Bash(docker *)",
+      "WebSearch"
+    ],
+    "ask": [
+      "Bash(rm -rf *)",
+      "Bash(rm -r -f *)",
+      "Bash(rm -fr *)",
+      "Bash(sudo rm -rf *)",
+      "Bash(sudo rm -r -f *)",
+      "Bash(rm --recursive --force *)",
+      "Bash(rm -rf)",
+      "Bash(docker rm *)",
+      "Bash(docker rmi *)",
+      "Bash(docker container rm *)",
+      "Bash(docker image rm *)",
+      "Bash(docker volume rm *)",
+      "Bash(docker network rm *)",
+      "Bash(docker system prune *)",
+      "Bash(docker builder prune *)",
+      "Bash(docker compose rm *)",
+      "Bash(docker compose down -v *)"
+    ],
+    "deny": [
+      "Bash(git commit)",
+      "Bash(git commit *)",
+      "Bash(git push)",
+      "Bash(git push *)",
+      "Bash(git pull)",
+      "Bash(git pull *)",
+      "Bash(git subtree push *)"
+    ]
+  },
+  "model": "opus",
+  "autoMemoryEnabled": true,
+  "theme": "dark",
+  "editorMode": "normal",
+  "verbose": false
+}
